@@ -1,0 +1,13 @@
+.input-bar-container {
+  margin-top: 1.2em;
+}
+
+.input-file {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-title {
+  margin: 0.5em 0;
+  font-weight: 500;
+}

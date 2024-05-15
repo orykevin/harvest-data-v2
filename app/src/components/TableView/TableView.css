@@ -1,0 +1,45 @@
+.table-container {
+  max-height: 85vh;
+  margin: 85px 25px 0px 25px;
+}
+
+.empty-container {
+  text-align: center;
+  height: 76vh;
+  background: white;
+  font-size: 18px;
+}
+.th-table {
+  font-weight: 500;
+  text-align: center;
+  border-right: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  background: white;
+}
+
+.border-table {
+  margin-left: 5px;
+}
+
+.title-row {
+  text-align: left;
+  padding-left: 32px;
+  background: gainsboro;
+  font-weight: 600;
+  border: 1px solid #b8b8b8;
+}
+
+.custom-width {
+  max-height: 100%;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+}
+
+.input-time-container {
+  outline: solid;
+  height: 12%;
+  position: relative;
+  margin-top: 20px;
+}
