@@ -23,7 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
-vite.config.ts
 yarn.lock
 
 #public email
