@@ -199,7 +199,7 @@ export function TableAllList(props: propsInterface) {
                   </TableCell>{" "}
                   <TableCell>
                     {"sender" in record ? (
-                      <EmailDialog filename={removeFileExt(record.subject)} />
+                      <EmailDialog filename={record?.subject?.includes('.eml') ? removeFileExt(record.subject) : record?.subject} />
                     ) : "filename" in record && record.filename !== null ? (
                       <TableDialog data={record} />
                     ) : (
