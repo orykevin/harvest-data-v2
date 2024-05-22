@@ -6,9 +6,7 @@ const multer = require("multer")
 const date = require("date-and-time")
 const path = require("path")
 const services = require ("../services/uploadImages")
-const imgUrl = path.resolve(__dirname, "../../../app/public/images")
-
-
+const imgUrl = path.resolve(__dirname, "../../app/public/images")
 
 router.use(bodyparser.json())
 
@@ -87,14 +85,7 @@ router.post("/", upload.array("files") ,async (req,res)=>{
             }
         }
     })
-    // const mapInfo = info.map((i)=>{
-    //     return JSON.parse(i)
-    // })
-    //console.log ("length: " + info.length)
-    //console.log("type: " + typeof info)
-    //console.log(info)
-    //console.log(infoArr)
-    //console.log(mappedArr)
+
     const insertingDb = await services.insertToPhotos(mappedArr)
     res.json(insertingDb)
 })
